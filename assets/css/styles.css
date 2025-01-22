@@ -704,7 +704,7 @@ Buttons
     height: 45px;
     font-size: 14px;
     padding: 12px 30px;
-    background-color: #ffa500;
+    background-color: #59A582;
 }
 
 .button-md:hover {
@@ -1805,9 +1805,9 @@ Posts / Blog
 }
 .section-blog-1 .post-item .post-image {
     position: relative;
-    padding-top: 60%;
-    margin-right: 15px;
-    margin-bottom: 20px;
+    padding-top: 70%;
+    margin-right: 10px;
+    margin-bottom: 12px;
     background: no-repeat var(--primary) center center / cover;
     transition: all 600ms;
 }

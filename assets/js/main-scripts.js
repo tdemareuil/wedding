@@ -60,6 +60,7 @@
     };
 
     /*====== PagePiling ======*/
+    
     MIRO.PageScrollEffect = function() {
         var pagepiling = $("#site-wrapper");
         pagepiling.pagepiling({
@@ -69,7 +70,7 @@
             sectionsColor: [],
             anchors: ["home", "about", "resume", "services", "portfolio", "testimonials", "blog", "contact"],
             scrollingSpeed: 700,
-            easing: "swing",
+            easing: "easeInOutCubic",
             loopBottom: false,
             loopTop: false,
             css3: true,
@@ -88,24 +89,25 @@
         });
     };
 
+
     /*====== Owl Carousel ======*/
     MIRO.Slider1 = function() {
         var slider = $(".carousel-blog-1");
         slider.owlCarousel({
             nav: true,
-            loop: false,
+            loop: true,
             dots: true,
-            items: 3,
+            items: 2,
             margin: 30,
             responsive: {
                 0: {
-                    items: 1
+                    items: 2
                 },
                 768: {
                     items: 2
                 },
                 1200: {
-                    items: 3
+                    items: 2
                 }
             }
         });
@@ -287,10 +289,11 @@
     MIRO.Typed = function() {
         if ($("#type")[0]) {
             var element = new Typed("#type", {
-                strings: ["an X-HEC Graduate", "a Data Science Lover", "Curious and Creative!"],
-                typeSpeed: 100,
+                strings: ["23 août 2025"],
+                typeSpeed: 40,
                 backSpeed: 20,
-                loop: true
+                showCursor: false,
+                loop: false
             });
         }
     };
@@ -298,10 +301,11 @@
     MIRO.Typed1 = function() {
         if ($("#type1")[0]) {
             var element = new Typed("#type1", {
-                strings: ["an X-HEC Graduate", "a Data Science Lover", "Curious and Creative!"],
-                typeSpeed: 100,
+                strings: ["^1000 Save the date !"],
+                typeSpeed: 20,
                 backSpeed: 20,
-                loop: true
+                loop: false,
+                showCursor: false
             });
         }
     };
