@@ -18,7 +18,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta property="og:image" content="https://cdn.discordapp.com/attachments/554431475831930880/690968789293989938/74a6f0d786aa6d347bc5f177125c732f.jpg">
-    <link rel="shortcut icon" href="t.png">
+    <link rel="shortcut icon" href="assets/images/t.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,300,500,600,700,900&display=swap">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/plugins.min.css">
@@ -52,7 +52,7 @@
     <!-- Start Sidenav -->
     <div class="site-sidenav">
         <div class="sidenav-menu">
-            <h2 class="logo">Thomas & Louison</h2>
+            <h3 class="logo">T & L</h3>
             <button class="button button-close-sidenav"></button>
             <ul class="menu">
                 <li>
@@ -60,7 +60,7 @@
                     <i class="ti-arrow-right"></i>
                 </li>
                 <li>
-                    <a href="#portfolio">Informations pratiques</a>
+                    <a href="#about">Informations pratiques</a>
                     <i class="ti-arrow-right"></i>
                 </li>
                 <li>
@@ -76,7 +76,7 @@
     <!-- Start Wrapper -->
     <div id="site-wrapper">
         <!-- Start Hero -->
-        <section class="section section-hero section-hero-1 overlay-image" style="background-image: url(assets/images/home.jpg); z-index: 8; transform: translate3d(0px, 0px, 0px);">
+        <section id="home" class="section section-hero section-hero-1 overlay-image" style="background-image: url(assets/images/home.jpg); z-index: 8; transform: translate3d(0px, 0px, 0px);">
             <div class="hero-content">
                 <div class="container">
                     <div class="row row-0">
@@ -91,35 +91,6 @@
             </div>
         </section>
         <!-- End Hero -->
-
-        <!-- Start About 
-        <section id="about" class="section section-about section-about-1 pp-scrollable">
-            <div class="display-screen">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-5">
-                            <div class="section-box">
-                                <div class="section-box-image overlay-image" style="background-image: url(assets/images/about.jpg);"></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="about-content">
-                                <div class="section-title section-title-3">
-                                    <h2><span></span></h2>
-                                    <h3><span>Bienvenue !</span></h3>
-                                    <div class="divider divider-1"></div>
-                                    <p>Vous trouverez ci-dessous toutes les informations nécessaires pour notre mariage. On a hâte de vous voir !</p>
-                                </div>
-                                 <div class="container">
-                                </div> 
-                                <img src="assets/images/fill.jpg" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        End About -->
 
         <!-- Start Resume -->
         <section id="resume" class="section section-resume section-resume-1 pp-scrollable">
@@ -139,6 +110,7 @@
                     <div class="row">
                         <div class="col-md-5">
                             <img src="assets/images/about.jpg" alt="" class="img-fluid">
+                            <br>
                         </div>
                         <div class="col-md-7">
                             <div class="resume-row">
@@ -149,7 +121,7 @@
                                             <div class="resume-head">
                                                 <span class="resume-icon fas fa-church"></span>
                                                 <h4>Messe – 16h30</h4>
-                                                <p style="font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eglise Saint-Trophyme, Bormes-les-Mimosas</p>
+                                                <p style="font-size: 14px;"><a href="https://maps.app.goo.gl/67R52sMyGd7usTEN6">Eglise Saint-Trophyme</a>, Bormes-les-Mimosas</p>
                                             </div>
                                             <div class="resume-body">
                                             </div>
@@ -160,7 +132,7 @@
                                             <div class="resume-head">
                                                 <span class="resume-icon fas fa-wine-glass"></span>
                                                 <h4>Réception – 18h30</h4>
-                                                <p style="font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Château de la Cheylane, La-Londe-les-Maures</p>
+                                                <p style="font-size: 14px;"><a href="https://maps.app.goo.gl/haDXzP38RyVfQco1A">Château de la Cheylane</a>, La-Londe-les-Maures</p>
                                             </div>
                                             <div class="resume-body">
                                             </div>
@@ -171,7 +143,7 @@
                                             <div class="resume-head">
                                                 <span class="resume-icon fas fa-mug-saucer"></span>
                                                 <h4>Brunch – 11h30</h4>
-                                                <p style="font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Château de la Cheylane, La-Londe-les-Maures</p>
+                                                <p style="font-size: 14px;"><a href="https://maps.app.goo.gl/haDXzP38RyVfQco1A">Château de la Cheylane</a>, La-Londe-les-Maures</p>
                                             </div>
                                             <div class="resume-body">
                                             </div>
@@ -179,31 +151,24 @@
                                     </li>
                                 </ul>
                             </div>
-
-                            <div class="section section-blog section-blog-1 pp-scrollable">
+                            <div class="section-blog section-blog-1 pp-scrollable">
                                 <div class="container">
                                     <div class="owl-carousel carousel-blog-1 carousel-style-1" data-items="3" data-margin="30">
-
                                         <div class="post-item">
                                                 <div class="post-image" style="background-image: url(assets/images/eglise.jpg);"></div>
                                         </div>
-
                                         <div class="post-item">
                                                 <div class="post-image" style="background-image: url(assets/images/chateau.jpg);"></div>
                                         </div>
-
                                         <div class="post-item">
                                                 <div class="post-image" style="background-image: url(assets/images/brunch.jpg);"></div>
                                         </div>
-
                                         <div class="post-item">
                                                 <div class="post-image" style="background-image: url(assets/images/xx.jpg);"></div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -211,8 +176,8 @@
         </section>
         <!-- End Resume -->
 
-        <!-- Start Portfolio -->
-        <section id="portfolio" class="section section-about section-about-1 pp-scrollable">
+        <!-- Start About -->
+        <section id="about" class="section section-about section-about-1 pp-scrollable">
             <div class="display-screen">
                 <div class="container">
                     <div class="row">
@@ -222,6 +187,7 @@
                             </div>
                         </div>
                         <div class="col-lg-7">
+                            <br><br>
                             <div class="about-content">
                                 <div class="section-title section-title-3">
                                     <h2><span></span></h2>
@@ -263,7 +229,7 @@
                 </div>
             </div>
         </section>
-        <!-- End Portfolio -->
+        <!-- End About -->
 
         <!-- Start Contact Me -->
         <section id="contact" class="section section-contact section-contact-1 pp-scrollable">       
@@ -273,9 +239,11 @@
                             <div class="col-lg-5">
                                 <div class="section-box">
                                     <div class="section-box-image overlay-image" style="background-image: url(assets/images/contact.jpg);"></div>
+                                    <br><br>
                                 </div>
                             </div>
                             <div class="col-lg-7">
+                                <br><br>
                                 <div class="about-content test">
                                     <div class="section-title section-title-3">
                                         <h2><span></span></h2>
@@ -314,15 +282,34 @@
 
 <!-- Load jQuery first -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
 <!-- Then load the easing plugin -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
-<!-- Then load your pagepiling and other scripts -->
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/plugins.min.js"></script>
-<script src="assets/js/pagepiling.min.js"></script>
 <script src="assets/js/main-scripts.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const header = document.querySelector('.site-header');
+    const homeSection = document.querySelector('#home');
+
+    function checkHeaderTransparency() {
+        const homeSectionTop = homeSection.getBoundingClientRect().top;
+        if (homeSectionTop >= 0 && homeSectionTop < window.innerHeight) {
+            header.classList.add('header-transparent');
+        } else {
+            header.classList.remove('header-transparent');
+        }
+    }
+
+    // Check on scroll
+    window.addEventListener('scroll', checkHeaderTransparency);
+
+    // Check on page load
+    checkHeaderTransparency();
+});
+</script>
 
 </body>
 </html>

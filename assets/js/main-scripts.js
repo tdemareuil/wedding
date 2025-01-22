@@ -22,7 +22,7 @@
         header.on("click", ".button-open-sidenav", function() {
             $(".site-sidenav").addClass("active");
         });
-        sidenav.on("click", ".button-close-sidenav, .sidenav-close, .sidenav-menu a", function() {
+        sidenav.on("click", ".button-close-sidenav, .sidenav-close, .sidenav-menu", function() {
             $(".site-sidenav").removeClass("active");
         });
     };
@@ -61,6 +61,8 @@
 
     /*====== PagePiling ======*/
     
+    /*
+
     MIRO.PageScrollEffect = function() {
         var pagepiling = $("#site-wrapper");
         pagepiling.pagepiling({
@@ -68,7 +70,7 @@
             direction: "vertical",
             verticalCentered: true,
             sectionsColor: [],
-            anchors: ["home", "about", "resume", "services", "portfolio", "testimonials", "blog", "contact"],
+            anchors: ["home", "resume", "about", "contact"],
             scrollingSpeed: 700,
             easing: "easeInOutCubic",
             loopBottom: false,
@@ -88,6 +90,70 @@
             afterLoad: function(anchorLink, index) {}
         });
     };
+
+    */
+
+    MIRO.PageScrollEffect = function() {
+    var pagepiling = $('#site-wrapper').pagepiling({
+        menu: ".site-header .header-menu",  // Navigation
+        direction: "vertical",  // Vertical scrolling
+        verticalCentered: true,
+        sectionsColor: [],
+        anchors: ["home", "resume", "about", "contact"],  // Anchor links
+        scrollingSpeed: 700,  // Scrolling speed (ms)
+        easing: "easeInOutCubic",  // Easing function
+        loopBottom: false,
+        loopTop: false,
+        css3: true,
+        navigation: {
+            position: "right"  // Navigation location
+        },
+        normalScrollElements: null,
+        normalScrollElementTouchThreshold: 5,
+        touchSensitivity: 5,
+        keyboardScrolling: true,
+        sectionSelector: ".section",
+        animateAnchor: true,
+
+        // Disable snapping and allow free scrolling in sections with `pp-scrollable`
+        afterRender: function() {
+            // Disable PagePiling's scroll behavior
+            $(document).off("wheel mousewheel DOMMouseScroll touchmove");
+            
+            // Allow sections to scroll naturally
+            $(".pp-scrollable").css("overflow", "auto");
+            
+            // Optional: Apply smooth scrolling to page
+            $("html").css({
+                "scroll-behavior": "smooth"  // Enable smooth scrolling
+            });
+
+            // Ensure smooth scroll within sections
+            var sections = $(".section");
+            sections.css({
+                'height': '100vh',  // Ensure sections take up full viewport height
+                'overflow': 'auto'  // Enable scroll inside each section
+            });
+        },
+
+        // Override the default scroll behavior to allow smooth scroll
+        afterLoad: function(anchorLink, index) {
+            var targetSection = $(anchorLink);
+            var targetOffset = targetSection.offset().top; 
+            
+            // Smooth scroll to section
+            $("html, body").animate({
+                scrollTop: targetOffset
+            }, 700);  // Adjust this to control the speed of scroll
+        },
+
+        // Disable PagePiling's scroll logic (prevent snapping)
+        onScroll: function(event) {
+            event.preventDefault();  // Stop PagePiling from handling the scroll
+        }
+    });
+}
+
 
 
     /*====== Owl Carousel ======*/
@@ -301,7 +367,7 @@
     MIRO.Typed1 = function() {
         if ($("#type1")[0]) {
             var element = new Typed("#type1", {
-                strings: ["^1000 Save the date !"],
+                strings: ["^1500 Save the date !"],
                 typeSpeed: 20,
                 backSpeed: 20,
                 loop: false,

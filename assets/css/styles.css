@@ -61,6 +61,10 @@
     Basic
 ------------------------------------*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     height: 100%;
     color: var(--base-1);
@@ -1706,7 +1710,7 @@ Hero
 @media (max-width: 576px) {
     .section-hero h1,
     .section-hero h2 {
-        font-size: 27px !important;
+        font-size: 35px !important;
     }
     .section-hero .button {
         height: inherit;
@@ -1715,7 +1719,7 @@ Hero
     }
     .section-hero-1 .hero-content,
     .section-hero-2 .hero-content {
-        background: rgba(255, 255, 255, .3);
+        background: none;
     }
 }
 /*------------------------------------
@@ -2378,8 +2382,8 @@ Owl Carousel
     cursor: not-allowed;
 }
 .owl-carousel .owl-dots .owl-dot {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     margin: 0 3px;
     border-radius: 50%;
 }
@@ -2436,6 +2440,9 @@ Owl Carousel
 /*------------------------------------
  Pagepiling
 ------------------------------------*/
+
+/*
+
 .pp-easing {
     transition: all 1200ms cubic-bezier(0.55, 0.085, 0, 0.99);
     transition-timing-function: cubic-bezier(0.55, 0.085, 0, 0.99);
@@ -2481,6 +2488,9 @@ Owl Carousel
         right: -5px !important;
     }
 }
+
+*/
+
 /*------------------------------------
 Magnific Popup
 ------------------------------------*/
@@ -2972,4 +2982,14 @@ Theme Preview
 .theme-preview .theme-preview-footer .footer-copyright p {
     font-size: 14px;
     margin-bottom: 15px;
+}
+
+.header-transparent {
+    background-color: transparent !important;
+}
+
+/* Make sure sections with pp-scrollable are scrollable */
+.pp-scrollable {
+    height: 100vh;  /* Set to full height */
+    overflow: auto; /* Allow natural scrolling */
 }
