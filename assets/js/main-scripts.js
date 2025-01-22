@@ -160,7 +160,7 @@
     MIRO.Slider1 = function() {
         var slider = $(".carousel-blog-1");
         slider.owlCarousel({
-            nav: true,
+            nav: false,
             loop: true,
             dots: true,
             items: 2,

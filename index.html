@@ -52,11 +52,11 @@
     <!-- Start Sidenav -->
     <div class="site-sidenav">
         <div class="sidenav-menu">
-            <h3 class="logo">T & L</h3>
+            <h3 class="logo" style="color: #f5f5f5">T & L</h3>
             <button class="button button-close-sidenav"></button>
             <ul class="menu">
                 <li>
-                    <a href="#resume">Programme</a>
+                    <a href="#resume">Horaires</a>
                     <i class="ti-arrow-right"></i>
                 </li>
                 <li>
@@ -81,9 +81,16 @@
                 <div class="container">
                     <div class="row row-0">
                         <div class="col-lg-8">
-                            <div class="hero-box">
-                                <h1 style="color: white; text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.9), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.5);">Thomas & Louison<br><span class="typed" id="type"></span></h1>
-                                <p style="font-size: 20px; color: white; text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.9), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.5);">...<span class="typed" id="type1"></span></p>
+                            <div class="hero-box" style="
+    position: relative;
+    display: inline-block;
+    background: rgba(200, 200, 200, 0.45); /* Fond clair et très transparent */
+    padding: 20px 20px;
+    border-radius: 8px; /* Coins arrondis pour un style moderne */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Ombre autour du fond pour un léger effet de relief */
+    ">
+                                <h1 style="color: #f5f5f5; /* Gris clair au lieu de blanc pur */ text-shadow: 6px 6px 24px rgba(0, 0, 0, 1); margin: 0;
+">Thomas & Louison<br><span class="typed" id="type"></span></h1>
                             </div>
                         </div>
                     </div>
@@ -109,12 +116,14 @@
                 <div class="container container-resume">
                     <div class="row">
                         <div class="col-md-5">
-                            <img src="assets/images/about.jpg" alt="" class="img-fluid">
+                            <div class="section-box">
+                                <div class="section-box-image overlay-image" style="background-image: url(assets/images/about.jpg);"></div>
+                            </div>
                             <br>
                         </div>
                         <div class="col-md-7">
                             <div class="resume-row">
-                                <h3 class="resume-title">Programme</h3>
+                                <h3 class="resume-title">Horaires</h3>
                                 <ul>
                                     <li>
                                         <div class="resume-item">
@@ -153,7 +162,8 @@
                             </div>
                             <div class="section-blog section-blog-1 pp-scrollable">
                                 <div class="container">
-                                    <div class="owl-carousel carousel-blog-1 carousel-style-1" data-items="3" data-margin="30">
+                                    <p class="post-title" style="font-size: 16px;"><b>Quelques photos supplémentaires !</b></p>
+                                    <div class="owl-carousel carousel-blog-1 carousel-style-1">
                                         <div class="post-item">
                                                 <div class="post-image" style="background-image: url(assets/images/eglise.jpg);"></div>
                                         </div>
@@ -164,7 +174,16 @@
                                                 <div class="post-image" style="background-image: url(assets/images/brunch.jpg);"></div>
                                         </div>
                                         <div class="post-item">
-                                                <div class="post-image" style="background-image: url(assets/images/xx.jpg);"></div>
+                                                <div class="post-image" style="background-image: url(assets/images/couple.jpg);"></div>
+                                        </div>
+                                        <div class="post-item">
+                                                <div class="post-image" style="background-image: url(assets/images/demande.jpg);"></div>
+                                        </div>
+                                        <div class="post-item">
+                                                <div class="post-image" style="background-image: url(assets/images/home.jpg);"></div>
+                                        </div>
+                                        <div class="post-item">
+                                                <div class="post-image" style="background-image: url(assets/images/home3.jpg);"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -247,12 +266,12 @@
                                 <div class="about-content test">
                                     <div class="section-title section-title-3">
                                         <h2><span></span></h2>
-                                        <h3>Merci!</h3>
+                                        <h3>Merci !</h3>
                                         <br>
                                         <div class="divider divider-1"></div>
                                         <br>
                                         <h4>Notre liste de Mariage</h4>
-                                        <a href="https://www.millemercismariage.com/thomasetlouison/liste.html" class="button button-md">Par ici pour notre liste !</a>
+                                        <a href="https://www.millemercismariage.com/thomasetlouison/liste.html" class="button button-md" style="color: #f5f5f5">Par ici pour notre liste !</a>
                                         <br><br><br><div class="divider divider-1"></div>
                                     </div>                                                               
                                 </div>

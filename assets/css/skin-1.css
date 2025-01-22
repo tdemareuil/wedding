@@ -1,6 +1,6 @@
 :root {
-    --primary: #80c293; /* #ffa500 = jaune-orange, #0b7554 = bleu-vert foncé, #81957A = sauge, #80c293 olivier, https://htmlcolorcodes.com/color-picker/*/
-    --primary-1: #80c293; /* #ff8800 = orange, #339266, 59A582 = bleu-vert clair*/
+    --primary: #325746; /* #ffa500 = jaune-orange, #0b7554 = bleu-vert foncé, #81957A = sauge, #80c293 olivier, #586e5c = foncé, #325746 = très foncé, https://htmlcolorcodes.com/color-picker/*/
+    --primary-1: #586e5c; /* #ff8800 = orange, #339266, 59A582 = bleu-vert clair*/
     --base-0: #fff; /* #fff = blanc*/
     --base-1: #000; /* #000 = noir*/
     --base-2: #000; /* #6c757d = gris*/

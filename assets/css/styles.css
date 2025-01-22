@@ -708,7 +708,8 @@ Buttons
     height: 45px;
     font-size: 14px;
     padding: 12px 30px;
-    background-color: #59A582;
+    opacity: .9;
+    background-color: var(--primary);
 }
 
 .button-md:hover {
@@ -964,7 +965,7 @@ Header
         left: 0;
         width: 100%;
         height: 60px;
-        opacity: .75;
+        opacity: .9;
         content: '';
         position: absolute;
         background-color: var(--primary);
@@ -1030,6 +1031,9 @@ Footer
 /*------------------------------------
 Sidenav
 ------------------------------------*/
+.sidenav-menu {
+    color: #f5f5f5;
+}
 .site-sidenav {
     top: 0;
     left: 0;
@@ -1047,7 +1051,7 @@ Sidenav
     height: 100%;
     min-height: 100%;
     z-index: 10001;
-    max-width: 75%;
+    max-width: 80%;
     position: fixed;
     overflow: hidden;
     background-color: var(--primary);
@@ -1132,7 +1136,7 @@ Sidenav
     height: 2px;
     content: "";
     position: absolute;
-    background-color: var(--base-1);
+    background-color: #f5f5f5;
 }
 .site-sidenav .sidenav-menu .button:after {
     transform: translate(-50%, -50%) rotate(-45deg);
@@ -1155,6 +1159,7 @@ Sidenav
     opacity: 0.75;
     position: fixed;
     background: var(--base-0);
+    color: #f5f5f5
 }
 @media (max-width: 575px) {
     .site-sidenav .sidenav-menu .mega-menu a {
@@ -1344,7 +1349,7 @@ section.active .section-title-1 h3 {
     bottom: 0;
     width: 36px;
     height: 36px;
-    opacity: 0.75;
+    opacity: 0.9;
     content: "";
     position: absolute;
     border-radius: 50%;
@@ -1382,7 +1387,7 @@ section.active .section-title-1 h3 {
     bottom: -6px;
     width: 36px;
     height: 36px;
-    opacity: 0.75;
+    opacity: 0.9;
     content: "";
     position: absolute;
     border-radius: 50%;
@@ -1427,12 +1432,14 @@ section.active .section-title-1 h3 {
 @media (max-width: 992px) {
     .section .section-box {
         position: relative;
-        padding: 100% 0 0;
+        padding: 133% 0 0;
         margin-bottom: 20px !important;
     }
     .section .section-box .section-box-image {
         left: 0;
         right: 0;
+        width: 100%; /* Ensure the image fills the container's width */
+        height: 100%; /* Ensure the image also fills the container's height */
     }
     .section .section-circle-side {
         display: none !important;
@@ -1445,7 +1452,7 @@ section.active .section-title-1 h3 {
     }
     .section .section-title-2 h3,
     .section .section-title-3 h3 {
-        font-size: 21px;
+        font-size: 25px;
     }
     .section .section-circle-side.left {
         left: inherit;
@@ -1710,7 +1717,7 @@ Hero
 @media (max-width: 576px) {
     .section-hero h1,
     .section-hero h2 {
-        font-size: 35px !important;
+        font-size: 30px !important;
     }
     .section-hero .button {
         height: inherit;
@@ -1729,7 +1736,28 @@ About
 * About Me - Style 1
 */
 .section-about-1 {
-    background-color: var(--base-0);
+    /*background-color: var(--base-0);*/
+    /*
+    background-image: url('assets/images/about.jpg');
+    background-repeat: repeat;
+    background-size: auto;
+    */
+    /*
+    background-image: 
+        radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+        radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+    background-size: 7px 7px, 7px 7px;
+    background-position: 0 0, 2.5px 2.5px;
+    */
+    
+    background-image: repeating-linear-gradient(
+        45deg,
+        rgba(0, 0, 0, 0.02) 0px,
+        rgba(0, 0, 0, 0.02) 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    
 }
 .section-about-1 .about-content ul.row {
     list-style: none;
@@ -1763,6 +1791,7 @@ About
     left: 0;
     width: 36px;
     height: 36px;
+    opacity: .6;
     content: "";
     position: absolute;
     border-radius: 50%;
@@ -1787,6 +1816,21 @@ Posts / Blog
 */
 .section-blog-1 {
     background-color: var(--base-0);
+    background-image: repeating-linear-gradient(
+        45deg,
+        rgba(0, 0, 0, 0.02) 0px,
+        rgba(0, 0, 0, 0.02) 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    border: 0.1px dotted white; /* Red border */
+    max-height: 245px;
+    padding: 0; /* Remove any unnecessary padding */
+    margin: 0; /* Remove any unnecessary margin */
+}
+.section-blog-1 .container {
+    padding: 0; /* Remove any unnecessary padding */
+    margin: 0 auto; /* Center the container */
 }
 .section-blog-1 .post-item {
     overflow: hidden;
@@ -1810,15 +1854,15 @@ Posts / Blog
 .section-blog-1 .post-item .post-image {
     position: relative;
     padding-top: 70%;
-    margin-right: 10px;
-    margin-bottom: 12px;
+    margin-right: 6px;
+    margin-bottom: 7px;
     background: no-repeat var(--primary) center center / cover;
     transition: all 600ms;
 }
 .section-blog-1 .post-item .post-content {
     position: relative;
-    padding-left: 60px;
-    padding-right: 15px;
+    padding-left: 30px;
+    padding-right: 10px;
     margin-bottom: 20px;
 }
 .section-blog-1 .post-item .post-content h5 {
@@ -1875,6 +1919,13 @@ Contact
 */
 .section-contact-1 {
     background-color: var(--base-0);
+    background-image: repeating-linear-gradient(
+        45deg,
+        rgba(0, 0, 0, 0.02) 0px,
+        rgba(0, 0, 0, 0.02) 2px,
+        transparent 2px,
+        transparent 4px
+    );
 }
 /*------------------------------------
 Resume
@@ -1886,6 +1937,7 @@ Resume
     position: relative;
     padding-left: 35px;
 }
+
 .section-resume-1 h4:before {
     top: 5px;
     left: -7px;
@@ -1897,6 +1949,7 @@ Resume
     border-radius: 50%;
     background-color: var(--primary);
 }
+
 .section-resume-1 h5 {
     color: var(--base-1);
     font-weight: 700;
@@ -1965,6 +2018,7 @@ Resume
     left: 15px;
     width: 36px;
     height: 36px;
+    opacity: .6;
     content: "";
     position: absolute;
     border-radius: 50%;
@@ -2018,7 +2072,7 @@ Resume
     bottom: -6px;
     width: 36px;
     height: 36px;
-    opacity: 0.75;
+    opacity: 0.9;
     content: "";
     position: absolute;
     border-radius: 50%;
@@ -2037,6 +2091,16 @@ Resume
     .section-resume-1 .section-title-3 h5 span {
         font-size: 12px;
     }
+}
+.section-resume-1 {
+    background-color: var(--base-0);
+    background-image: repeating-linear-gradient(
+        45deg,
+        rgba(0, 0, 0, 0.02) 0px,
+        rgba(0, 0, 0, 0.02) 2px,
+        transparent 2px,
+        transparent 4px
+    );
 }
 /*------------------------------------
 Features
@@ -2243,7 +2307,7 @@ Testimonials
     bottom: -6px;
     width: 36px;
     height: 36px;
-    opacity: 0.75;
+    opacity: 0.9;
     content: "";
     position: absolute;
     border-radius: 50%;
@@ -2382,8 +2446,8 @@ Owl Carousel
     cursor: not-allowed;
 }
 .owl-carousel .owl-dots .owl-dot {
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     margin: 0 3px;
     border-radius: 50%;
 }
@@ -2441,8 +2505,6 @@ Owl Carousel
  Pagepiling
 ------------------------------------*/
 
-/*
-
 .pp-easing {
     transition: all 1200ms cubic-bezier(0.55, 0.085, 0, 0.99);
     transition-timing-function: cubic-bezier(0.55, 0.085, 0, 0.99);
@@ -2488,8 +2550,6 @@ Owl Carousel
         right: -5px !important;
     }
 }
-
-*/
 
 /*------------------------------------
 Magnific Popup
@@ -2883,7 +2943,7 @@ Theme Preview
     bottom: -3px;
     width: 36px;
     height: 36px;
-    opacity: 0.75;
+    opacity: 0.9;
     content: "";
     position: absolute;
     border-radius: 50%;
@@ -2922,7 +2982,7 @@ Theme Preview
     bottom: -7px;
     width: 36px;
     height: 36px;
-    opacity: 0.75;
+    opacity: 0.9;
     content: "";
     position: absolute;
     border-radius: 50%;
