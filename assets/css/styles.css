@@ -1328,7 +1328,7 @@ section.active .section-title-1 h3 {
 .section .section-title-2 {
     text-align: center;
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     z-index: 99;
 }
 .section .section-title-2 h2 {
@@ -1751,12 +1751,12 @@ About
     */
     
     background-image: repeating-linear-gradient(
-        45deg,
-        rgba(0, 0, 0, 0.02) 0px,
-        rgba(0, 0, 0, 0.02) 2px,
-        transparent 2px,
-        transparent 4px
-    );
+    45deg,
+    rgba(0, 0, 0, 0.025) 0px,
+    rgba(0, 0, 0, 0.025) 2.5px,
+    transparent 3px, 
+    transparent 5px 
+);
     
 }
 .section-about-1 .about-content ul.row {
@@ -1817,16 +1817,21 @@ Posts / Blog
 .section-blog-1 {
     background-color: var(--base-0);
     background-image: repeating-linear-gradient(
-        45deg,
-        rgba(0, 0, 0, 0.02) 0px,
-        rgba(0, 0, 0, 0.02) 2px,
-        transparent 2px,
-        transparent 4px
-    );
+    45deg,
+    rgba(0, 0, 0, 0.025) 0px,
+    rgba(0, 0, 0, 0.025) 2.5px,
+    transparent 3px, 
+    transparent 5px 
+);
     border: 0.1px dotted white; /* Red border */
-    max-height: 245px;
+    max-height: 280px;
     padding: 0; /* Remove any unnecessary padding */
     margin: 0; /* Remove any unnecessary margin */
+}
+@media (max-width: 992px) {
+    .section-blog-1 {
+        max-height: 210px !important;
+    }
 }
 .section-blog-1 .container {
     padding: 0; /* Remove any unnecessary padding */
@@ -1920,12 +1925,12 @@ Contact
 .section-contact-1 {
     background-color: var(--base-0);
     background-image: repeating-linear-gradient(
-        45deg,
-        rgba(0, 0, 0, 0.02) 0px,
-        rgba(0, 0, 0, 0.02) 2px,
-        transparent 2px,
-        transparent 4px
-    );
+    45deg,
+    rgba(0, 0, 0, 0.025) 0px,
+    rgba(0, 0, 0, 0.025) 2.5px,
+    transparent 3px, 
+    transparent 5px 
+);
 }
 /*------------------------------------
 Resume
@@ -2095,12 +2100,12 @@ Resume
 .section-resume-1 {
     background-color: var(--base-0);
     background-image: repeating-linear-gradient(
-        45deg,
-        rgba(0, 0, 0, 0.02) 0px,
-        rgba(0, 0, 0, 0.02) 2px,
-        transparent 2px,
-        transparent 4px
-    );
+    45deg,
+    rgba(0, 0, 0, 0.025) 0px,
+    rgba(0, 0, 0, 0.025) 2.5px,
+    transparent 3px, 
+    transparent 5px 
+);
 }
 /*------------------------------------
 Features
