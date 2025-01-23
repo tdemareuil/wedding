@@ -1763,7 +1763,7 @@ About
     */
     
     background-image: repeating-linear-gradient(
-    45deg,
+    135deg,
     rgba(0, 0, 0, 0.025) 0px,
     rgba(0, 0, 0, 0.025) 2.5px,
     transparent 3px, 
@@ -1829,7 +1829,7 @@ Posts / Blog
 .section-blog-1 {
     background-color: var(--base-0);
     background-image: repeating-linear-gradient(
-    45deg,
+    135deg,
     rgba(0, 0, 0, 0.025) 0px,
     rgba(0, 0, 0, 0.025) 2.5px,
     transparent 3px, 
@@ -1937,7 +1937,7 @@ Contact
 .section-contact-1 {
     background-color: var(--base-0);
     background-image: repeating-linear-gradient(
-    45deg,
+    135deg,
     rgba(0, 0, 0, 0.025) 0px,
     rgba(0, 0, 0, 0.025) 2.5px,
     transparent 3px, 
@@ -2112,7 +2112,7 @@ Resume
 .section-resume-1 {
     background-color: var(--base-0);
     background-image: repeating-linear-gradient(
-    45deg,
+    135deg,
     rgba(0, 0, 0, 0.025) 0px,
     rgba(0, 0, 0, 0.025) 2.5px,
     transparent 3px, 
