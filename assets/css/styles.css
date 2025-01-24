@@ -1441,23 +1441,30 @@ section.active .section-title-1 h3 {
 .section .section-circle-side.right {
     right: -30%;
 }
+
 @media (max-width: 992px) {
     .section .section-box {
         position: relative;
         padding: 133% 0 0;
         margin-bottom: 20px !important;
     }
+    .section-resume .section-box {
+    padding-right: 30px;
+    height: 70% !important;
+}
+    .section-resume .section-box .section-box-image {
+    top: 0;
+    left: 15px;
+    right: 30px;
+    height: 100%;
+    position: absolute;
+}
     .section .section-box .section-box-image {
         left: 0;
         right: 0;
         width: 100%; /* Ensure the image fills the container's width */
         height: 100%; /* Ensure the image also fills the container's height */
     }
-    .section .section-circle-side {
-        display: none !important;
-    }
-}
-@media (max-width: 768px) {
     .section .section-title-2 h2,
     .section .section-title-3 h2 {
         font-size: 14px;
@@ -1486,6 +1493,11 @@ section.active .section-title-1 h3 {
 /*------------------------------------
 Hero
 ------------------------------------*/
+.hero-box p {
+    font-size: 26px;
+    padding-top: 5px;
+}
+a {text-decoration: underline;}
 .section-hero {
     height: 100vh;
     overflow: hidden;
@@ -1721,10 +1733,11 @@ Hero
     background: var(--base-0);
 }
 @media (max-width: 992px) {
-
+    .hero-box p {
+        font-size: 130% !important;
+        padding-top: 4px !important;
 }
-@media (max-width: 768px) {
-    
+a {text-decoration: underline;}
 }
 @media (max-width: 576px) {
     .section-hero h1,
@@ -2098,7 +2111,7 @@ Resume
 .section-resume-1 .container-resume {
     margin-bottom: 50px;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .section-resume-1 .skills-item {
         margin-bottom: 30px;
     }
@@ -2512,7 +2525,7 @@ Owl Carousel
 .carousel-style-2 .owl-dots .owl-dot.active {
     background-color: var(--primary);
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .carousel-style-2 .owl-dots {
         top: 20px;
         right: 20px;
