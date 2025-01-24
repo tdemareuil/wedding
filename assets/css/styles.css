@@ -1497,7 +1497,7 @@ Hero
     font-size: 26px;
     padding-top: 5px;
 }
-a {text-decoration: underline;}
+.hero-box a {text-decoration: underline;}
 .section-hero {
     height: 100vh;
     overflow: hidden;
@@ -1737,7 +1737,6 @@ a {text-decoration: underline;}
         font-size: 130% !important;
         padding-top: 4px !important;
 }
-a {text-decoration: underline;}
 }
 @media (max-width: 576px) {
     .section-hero h1,
